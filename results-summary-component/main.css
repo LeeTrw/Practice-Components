@@ -1,0 +1,255 @@
+:root {
+--Lightred: hsl(0, 100%, 67%);
+--Orangeyyellow: hsl(39, 100%, 56%);
+--Greenteal: hsl(166, 100%, 37%);
+--Cobaltblue: hsl(234, 85%, 45%);
+
+
+/* background */
+--Lightslateblue: hsl(252, 100%, 67%);
+--Lightroyalblue: hsl(241, 81%, 54%);
+/*circle*/
+--Violetblue: hsla(256, 72%, 46%, 1);
+--Persianblue: hsla(241, 72%, 46%, 0);
+
+
+--White: hsl(0, 0%, 100%);
+--Paleblue: hsl(221, 100%, 96%);
+--Lightlavender: hsl(241, 100%, 89%);
+--Darkgrayblue: hsl(224, 30%, 27%);
+} 
+ 
+@font-face {
+    font-family: 'all';
+    src: url('/fonts/HankenGrotesk-VariableFont_wght.ttf');
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'all', sans-serif;
+ }
+
+ body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+ }
+
+ .cards-con {
+    height: 25rem;
+    width: 36rem;
+    display: flex;
+ }
+
+ .left {
+    height: 28rem;
+    width: 18rem;
+    background: linear-gradient(var(--Lightslateblue) 10%, var(--Lightroyalblue)) no-repeat;
+    border-radius: 2rem;
+    padding: 2rem;
+    text-align: center;
+    color: white;
+    position: relative;
+    right: -2rem;
+ }
+
+ .left h2 {
+    margin-bottom: 2rem;
+    color: hsl(241, 100%, 89%);
+ }
+
+ .left .circle {
+    height: 10rem;
+    width: 10rem;
+    background: linear-gradient(var(--Violetblue), var(--Persianblue));
+    margin: auto;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+ }
+ 
+ .left .circle .mainScore {
+    font-size: 5rem;
+    font-weight: 800;
+ }
+
+ .left .circle .outOf {
+    color: hsla(241, 100%, 89%,0.6);
+    margin-top: -0.8rem;
+    font-weight: 500;
+ }
+
+.left .h3 {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+}
+
+.left .p {
+    margin-top: 1rem;
+    color: hsl(241, 100%, 89%);
+}
+
+.right {
+    height: 28rem;
+    width: 21rem;
+    background-color: #fff;
+    border-radius: 0rem 2rem 2rem 0rem;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+    text-align: center;
+    color: black;
+ }
+
+ .right h2 {
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+    text-align: left;
+    color: var(--Darkgrayblue);
+ }
+
+ .right .scores {
+    margin: 1rem 0rem 1rem 2rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    height: 3rem;
+    width: 14rem;
+    border-radius: 1rem;
+ }
+
+ .right .scores .skill {
+    width: 40%;
+    font-weight: 700;
+    
+    text-align: left;
+ }
+
+ .right .scores .score {
+    width: 40%;
+    color: rgba(200, 199, 255, 1);
+    font-weight: 500;
+ }
+
+ .right .scores .score #reaction-score {
+    color: black;
+    font-weight: bold;
+ }
+ .right .scores .score #memory-score {
+    color: black;
+    font-weight: bold;
+ }
+ .right .scores .score #verbal-score {
+    color: black;
+    font-weight: bold;
+ }
+ .right .scores .score #visual-score {
+    color: black;
+    font-weight: bold;
+ }
+
+ .right svg {
+    width: 10%;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    
+ }
+
+ .right .reaction-con {
+    background-color: rgba(255, 87, 87, 0.05);
+ }
+
+ .right .reaction {
+    color: var(--Lightred);
+ }
+
+ .right .memory-con {
+    background-color: rgba(255, 176, 31, 0.05);
+ }
+
+ .right .memory {
+    color: hsl(39, 100%, 56%);
+ }
+
+ .right .verbal-con {
+    background-color: hsla(166, 100%, 37%, 0.05);
+ }
+ .right .verbal {
+    color: hsl(166, 100%, 37%);
+ }
+
+.right .visual-con {
+    background-color: hsla(234, 85%, 45%, 0.05);
+} 
+.right .visual {
+    color: hsl(234, 85%, 45%);
+} 
+
+ .right button {
+    margin-left: 2rem;
+    border-radius: 5rem;
+    width: 14rem;
+    height: 2.4rem;
+    background-color: var(--Darkgrayblue);
+    color: #FFF;
+    border: none;
+ }
+
+ .right button:hover {
+    background: var(--Lightroyalblue);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 480px) {
+   body {
+      display: block;
+      height: 100vh;
+      width: 100%;
+   }
+   
+   .cards-con {
+      height: 100%;
+      width: 100%;
+      flex-direction: column;
+      margin: 0;
+   }
+
+   .left {
+      width: 100%;
+      margin: 0;
+      position: static;
+      border-radius: 0rem 0rem 2rem 2rem;
+   }
+
+   .right {
+      width: 100%;
+      margin: 0;
+      padding: 1rem;
+   }
+
+   .right .scores {
+      width: 95%;
+      margin: auto;
+      margin-top: 1.3rem;
+   }
+
+   .right .scores .score {
+      text-align: right;
+   }
+
+   .right button {
+      width: 100%;
+      margin: auto;
+      margin-top: 2rem;
+      height: 3rem;
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+   }
+  
+}
