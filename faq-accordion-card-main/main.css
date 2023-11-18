@@ -1,0 +1,253 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-color: hsl(273, 75%, 66%);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 30rem;
+}
+
+.img-con {
+    background-color: #FFF;
+    height: 30rem;
+    width: 40%;
+    position: relative;
+    border-radius: 5rem 0rem 0rem 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-con .img-box,
+.img-con .img-woman,
+.img-con .img-base {
+    position: absolute;
+}
+
+.img-con .img-box {
+    z-index: 1;
+    width: 8rem;
+    height: auto;
+    top: 45%;
+    left: -4rem;
+}
+
+.img-con .img-woman {
+    width: 23rem;
+    height: auto;
+    top: 23%;
+    left: -4rem;
+}
+
+.img-con .img-base {
+    width: 23rem;
+    height: auto;
+    top: 13%;
+    left: -4rem;
+}
+
+.faq-con {
+    width: 60%;
+    height: 30rem;
+    background-color: #FFF;
+    border-radius: 0rem 5rem 5rem 0rem;
+    padding: 1rem;
+}
+
+.faq-con .title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.question, .answer {
+    font-size: 1rem;
+    margin: 0.7rem;
+}
+
+.question-con {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    
+}
+
+.question {
+    width: 85%;
+    color: rgb(92, 91, 91);
+}
+
+.arrow {
+    width: 1.3rem;
+    height: 1rem;
+    transition: transform 0.1s ease-in-out;
+}
+
+.arrow.active {
+    transform: rotate(180deg);
+}
+
+.answer {
+    height: 0px;
+    overflow: hidden;
+    border-bottom: 1px solid grey;
+    width: 88%;
+    transition: height 0.3s ease-in-out;
+    color: rgb(138, 138, 138);
+}
+
+.answer.active {
+    height: 4rem;
+    padding: 0.2rem;
+}
+
+@media screen and (max-width: 800px){
+
+    .img-con .img-box {
+        width: 4rem;
+        left: -1.5rem;
+        top: 43%;
+    }
+    
+    .img-con .img-woman {
+        width: 14rem;
+        left: -2rem;
+        top: 28%;
+    }
+    
+    .img-con .img-base {
+        width: 14rem;
+        left: -2rem;
+        top: 26%;
+    }
+
+    .arrow {
+        width: 1rem;
+        height: 0.6rem;
+        margin-right: 0rem;
+    }
+
+    .answer {
+        font-size: 0.9rem;
+        width: 95%;
+    }
+
+    .answer.active {
+        height: 4rem;
+    }
+
+    .question {
+        font-size: 0.9rem;
+    }
+
+    .faq-con {
+        overflow: hidden;
+    }
+
+    .faq-con .title {
+        font-size: 1.5rem;
+        margin-bottom: 0.1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    body{
+        height: auto;
+    }
+
+    .container {
+        flex-direction: column;
+        width: 95%;
+        height: fit-content;
+        margin-top: 9rem;
+        margin-bottom: 5rem;
+    }
+    
+    .img-con {
+        background-color: #FFF;
+        height: 8rem;
+        width: 100%;
+        position: relative;
+        border-radius: 2rem 2rem 0rem 0rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .img-con .img-box {
+        z-index: 1;
+        width: 7rem;
+        height: auto;
+        left: 7%;
+        top: -2rem;
+    }
+    
+    .img-con .img-woman {
+        width: 18rem;
+        height: auto;
+        left: 10%;
+        top: -7rem;
+    }
+    
+    .img-con .img-base {
+        width: 18rem;
+        height: auto;
+        left: 10%;
+        top: -9rem;
+    }
+
+    .faq-con {
+        width: 100%;
+        border-radius: 0rem 0rem 2rem 2rem;
+        padding: 1rem;
+        height: fit-content;
+        padding-bottom: 3rem;
+    }
+
+    .faq-con .title {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .arrow {
+        width: 1.2rem;
+        height: 0.8rem;
+        margin-right: 0.4rem;
+    }
+
+    .answer {
+        font-size: 1.2rem;
+        width: 95%;
+    }
+
+    .answer.active {
+        height: 8rem;
+    }
+
+    .question {
+        font-size: 1.2rem;
+    }
+
+    .question-con {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        padding: 0.1rem;
+    }
+}
