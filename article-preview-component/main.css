@@ -1,0 +1,275 @@
+:root {
+    --GrayishBlue: hsl(212, 23%, 69%);
+    --LightGrayishBlue: hsl(210, 46%, 95%);
+    --VeryDarkGrayishBlue: hsl(217, 19%, 35%);
+    --DesaturatedDarkBlue: hsl(214, 17%, 51%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--LightGrayishBlue);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+    width: 60%;
+    height: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.container .left {
+    width: 40%;
+    height: 100%;
+    background-image: url('images/drawers.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.container .right {
+    width: 60%;
+    height: 100%;
+    padding: 2rem;
+}
+
+.right .first {
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    line-height: 1.8rem;
+    color: var(--VeryDarkGrayishBlue);
+    height: 40%;
+}
+
+.right .second {
+    font-size: 1rem;
+    color: var(--DesaturatedDarkBlue);
+    height: 40%;
+}
+
+.right .share-con {
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.right .share-con .headshot-con {
+    width: 15%;
+}
+
+.right .share-con #headshot {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+}
+
+.right .share-con .info {
+    width: 70%;
+}
+
+.right .share-con .info h5 {
+    font-size: 1rem;
+    color: var(--VeryDarkGrayishBlue);
+}
+.right .share-con .info p {
+    font-size: 0.8rem;
+    color: var(--DesaturatedDarkBlue);
+}
+
+.right .share-con .arrow-con {
+    width: 15%;
+    cursor: pointer;
+}
+
+.right .share-con #arrow {
+    width: 1.2rem;
+    height: 1.2rem;
+    padding: 0.5rem;
+    box-sizing: content-box;
+    border-radius: 50%;
+    background-color: var(--LightGrayishBlue);
+}
+
+
+.arrow-con.active::after {
+    content: ''; 
+    border: 10px solid var(--VeryDarkGrayishBlue); 
+    border-left-color: transparent;
+    border-bottom-color: transparent; 
+    border-right-color: transparent; 
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    top: -11%;
+    left: 86.5%;
+}
+
+.toggle-con {
+    display: none;
+    position: absolute;
+    z-index: 1; 
+    width: 13rem;
+    height: 3rem;
+    background-color: var(--VeryDarkGrayishBlue);
+    border-radius: 0.5rem;
+    transform: translateX(-50%);
+  }
+  
+  .toggle-con.active {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+
+  .toggle-con p {
+    font-size: 0.8rem;
+    letter-spacing: 3px;
+    color: var(--GrayishBlue);
+    margin-left: 1rem;
+  }
+
+  .toggle-con img {
+    width: 1rem;
+    height: 1rem;
+    cursor: pointer;
+    margin-left: -0.5rem;
+  }
+
+
+@media screen and (max-width: 1028px) {
+    .container {
+        width: 70%;
+        height: 60%;
+    }
+    
+    
+    .right .share-con .info h5 {
+        font-size: 0.7rem;
+        padding-left: 1rem;
+    }
+    .right .share-con .info p {
+        font-size: 0.6rem;
+        padding-left: 1rem;
+    }
+}
+    
+   
+@media screen and (max-width: 480px) {
+        
+    .container {
+        width: 70%;
+        height: 65%;
+        flex-direction: column;
+    }
+    
+    .container .left {
+        width: 100%;
+        height: 40%;
+    }
+    
+    .container .right {
+        width: 100%;
+        height: 60%;
+    }
+    
+    .right .first {
+        font-size: 0.7rem;
+        line-height: 1rem;
+    }
+    
+    .right .second {
+        font-size: 0.6rem;
+    }
+    
+    .right .share-con {
+        width: 100%;
+        height: 20%;
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+    
+    
+    .right .share-con #headshot {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+    
+    .right .share-con .info h5 {
+        font-size: 0.6rem;
+    }
+    .right .share-con .info p {
+        font-size: 0.5rem;
+    }
+    
+    .right .share-con #arrow {
+        width: 0.8rem;
+        height: 0.8rem;
+        padding: 0.4rem;
+    }
+    
+    
+    .arrow-con.active::after {
+        top: -19%;
+    }    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
