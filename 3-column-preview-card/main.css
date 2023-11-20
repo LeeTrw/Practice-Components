@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'title';
+    src: url('/fonts/BigShouldersDisplay-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'p';
+    src: url('/fonts/LexendDeca-VariableFont_wght.ttf') format('truetype');
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 85%;
+    margin: auto;
+    height: 100vh;
+}
+
+.card {
+    height: 25rem;
+    width: 18rem;
+    padding: 2rem;
+}
+
+.card h2 {
+    color: rgb(242, 242, 242);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    font-family: 'title', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.card p {
+    color: rgba(255, 255, 255, 0.75);
+    height: 10rem;
+    font-family: 'p', sans-serif;
+    font-size: 15px;
+}
+
+.card button {
+    background-color: rgb(255, 255, 255);
+    border-radius: 5rem;
+    padding: 0.5rem;
+    width: 7rem;
+    border: 2px solid hsl(0, 0%, 100%);
+    font-family: 'p', sans-serif;
+    font-weight: 400;
+    
+}
+
+.card button:hover {
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+}
+
+.sedan {
+    background-color: rgb(227, 136, 38);
+    border-radius: 0.5rem 0rem 0rem 0.5rem;
+}
+
+.sedan button {
+    color: rgb(227, 136, 38);
+}
+
+.suv {
+    background-color: rgb(0, 105, 112);
+}
+
+.suv button {
+    color: rgb(0, 105, 112);
+}
+
+.luxury {
+    background-color: rgb(0, 66, 65);
+    border-radius: 0rem 0.5rem 0.5rem 0rem;
+}
+
+.luxury button {
+    color: rgb(0, 66, 65);
+}
+
+
+@media screen and (max-width: 800px) {
+    .card {
+        height: 30rem;
+    }
+
+    .card p {
+        height: 15rem;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    body {
+        flex-direction: column;
+        height: fit-content;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    .card {
+        height: 25rem;
+    }
+    .card p {
+        height: 10rem;
+    }
+
+    .sedan {
+        border-radius: 0.5rem 0.5rem 0rem 0rem;
+    }
+
+    .luxury {
+        border-radius: 0rem 0rem 0.5rem 0.5rem;
+    }
+
+}
