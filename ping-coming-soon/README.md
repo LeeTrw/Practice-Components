@@ -38,7 +38,7 @@ Users should be able to:
 ![A raw view of the webpage.](images/screenshots/screenshot1.jpg)
 ![Hover states and error message active.](images/screenshots/screenshot2.jpg)
 ![A raw tablet view.](images/screenshots/screenshot3.jpg)
-![A raw mobile view.](images/screenshots/screenshot4.jpg.jpg)
+![A raw mobile view.](images/screenshots/screenshot4.jpg)
 
 
 ### Built with
