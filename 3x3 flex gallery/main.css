@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(144deg, rgba(223,223,223,1) 32%, rgb(51, 51, 51) 99%);
+    text-align: center;
+    margin: auto;
+    margin-top: 1.5rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h1 {
+    margin-bottom: 1rem;
+}
+
+.container {
+    width: 85%;
+    height: 85%;
+    display: flex;
+    flex-wrap: wrap;    
+    margin: auto;
+    overflow: hidden;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-shrink: 1;
+} 
+
+.box {
+    background-color: #000;
+    border: 2px solid #000;
+    width: 33.33333%;
+    height: 33.33333%;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: height 0.6s, width 1s cubic-bezier(1, 0.07, 0.77, 0.73);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .box.large {
+   width: 50%;
+   height: 100%;
+  }
+
+  .box.small {
+    width: 25%;
+    height: 25%;
+  }
+
+  .b1 {background-image: url('images/1-tim-schmidbauer.webp');}
+  .b2 {background-image: url('images/2-axp-photography.webp');}
+  .b3 {background-image: url('images/3-abi-ismail.webp');}
+  .b4 {background-image: url('images/4-hamayoon-pacha.webp');}
+  .b5 {background-image: url('images/5-fei-chao.webp');}
+  .b6 {background-image: url('images/6-johanneke-kroesbergen.webp');}
+  .b7 {background-image: url('images/7-margarita-marushevska.webp');}
+  .b8 {background-image: url('images/8-masahiro-miyagi.webp');}
+  .b9 {background-image: url('images/9-justin-zhu.webp');}
