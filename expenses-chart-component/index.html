@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Expenses chart component</title>
+
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+<div class="container">
+  <div class="balance-con">
+      <div class="balance">
+        <h2>My balance</h2>
+        <p>$921.48</p>
+      </div>
+      <img src="images/logo.svg">
+  </div>
+  
+  <div class="spending-con">
+      <h3>Spending - Last 7 days</h3>
+
+   <div class="bar-chart">
+     
+      <div class="day">
+        <p class="day-spend"></p>
+        <div id="monday" class="bar"></div>
+        <p class="day-name">mon</p>
+      </div>
+
+      <div class="day">
+        <p class="day-spend"></p>
+        <div id="tuesday" class="bar"></div>
+        <p class="day-name">tue</p>
+      </div>
+
+      <div class="day">
+        <p class="day-spend"></p>
+        <div class="bar wednesday"></div>
+        <p class="day-name">wed</p>
+      </div>
+
+      <div class="day">
+        <p class="day-spend"></p>
+        <div class="bar thursday"></div>
+        <p class="day-name">thu</p>
+      </div>
+
+      <div class="day">
+        <p class="day-spend"></p>
+        <div class="bar friday"></div>
+        <p class="day-name">fri</p>
+      </div>
+
+      <div class="day">
+        <p class="day-spend"></p>
+        <div class="bar saturday"></div>
+        <p class="day-name">sat</p>
+      </div>
+
+      <div class="day">
+        <p class="day-spend"></p>
+        <div class="bar sunday"></div>
+        <p class="day-name">sun</p>
+      </div>
+
+   </div>
+
+      <hr>
+
+      <div class="total-con">
+        <div class="total">
+          <h3>Total this month</h3>
+          <p>$478.33</p>
+        </div>
+        <div class="percent">
+          <p>+2.4%</p>
+          <h3>from last month</h3>
+        </div>
+      </div>
+  </div>
+</div>
+ <script src="main.js"></script>
+</body>
+</html>
