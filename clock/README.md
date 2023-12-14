@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Screenshot
 
-![A raw view of the clock.](/screenshot1.png)
+![A raw view of the clock.](screenshot1.png)
 
 
 ### Built with
