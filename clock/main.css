@@ -1,0 +1,63 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+background-image: url('bck.jpg');
+background-size: cover;
+display: flex;
+align-items: center;
+justify-content: center;
+height: 100vh;
+width: 100%;
+}
+
+.clock {
+    background-color: transparent;
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    border: 15px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.clock-face {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .hand {
+    width: 50%;
+    height: 6px;
+    background: black;
+    position: absolute;
+    top: 50%;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    transition: all 0.05s;
+    transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+    border-radius: 0rem 10rem 10rem 0rem;
+  }
+
+  .hour-hand {
+    width: 35%;
+    left: 15%;
+  }
+
+  .second-hand {
+    background-color: red;
+    height: 3px;
+    width: 45%;
+    left: 5%;
+  }
+
+  .min-hand {
+    width: 45%;
+    left: 5%;
+  }
+
